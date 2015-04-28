@@ -1,0 +1,21 @@
+{
+  "name": "hw3-wireframes",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cse134b-cacheit/hw3-wireframes",
+  "authors": [
+    "alex gian <alexhgian@gmail.com>"
+  ],
+  "description": "CSE 134B Homework 3 - Wireframing",
+  "main": "index.html",
+  "keywords": [
+    "hw"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
