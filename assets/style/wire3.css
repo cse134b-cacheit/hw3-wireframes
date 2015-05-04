@@ -1,0 +1,39 @@
+#value-box {
+   background: #E5E5E5;
+   margin-bottom: 16px;
+
+    padding: 16px 16px 16px 16px;
+
+
+}
+.value-small {
+   font-size: 70%;
+   font: bold;
+   color: grey;
+}
+#coin-info {
+   margin: 32px 0;
+}
+@media (max-width: 550px) {
+   #coin-info {
+      margin: 0 0;
+   }
+}
+.coin-pull-right {
+   padding-top: 4px;
+   float: right;
+}
+.coin-bar {
+   margin-top: 0;
+   margin-bottom: 8px;
+}
+.coin-header {
+   margin-bottom: 0;
+}
+.coin-data {
+   text-align: center;
+   margin-left: 0;
+}
+.my-h5 {
+   margin-bottom: 0;
+}

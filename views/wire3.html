@@ -1,55 +1,131 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Hello ZingChart World</title>
-<script src="../../bower_components/zingchart/client/zingchart.min.js"></script>
-<script>
-var chartData={
-  "type": "area",
-  "plot":{
-      "aspect":"spline",
-        "stacked":true,
-        "shadow":"false"
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-  },
-  "series": [
-    {
-        "values": [35, 42, 67, 89, 25, 34, 67, 85 ],
-        "text":"Gold",
-        "background-color-1" : "#FFD700",
-        "background-color-2" : "#FFD700",
-           alpha:0,
+   <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
+   <link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="../assets/style/wire3.css">
+   <script src="../assets/script/wire3.js"></script>
+   <script src="http://cdn.zingchart.com/zingchart.min.js"></script>
 
-
-    },
-    {
-        "values": [54, 77, 48, 35, 40, 50, 70, 99 ],
-        "text":"Silver",
-        "background-color-1" : "#C0C0C0",
-        "background-color-2" : "#C0C0C0"
-    },
-    {
-        "values": [28, 57, 43, 56, 78, 99, 67, 28 ],
-        "text":"Platinum",
-        "background-color-1" : "#E5E4E2",
-        "background-color-2" : "#E5E4E2"
-
-    }
-  ],
-  "legend":{ }
-};
-window.onload=function(){
-  zingchart.render({
-    id:'chartDiv',
-    height:400,
-    width:600,
-    data:chartData
-  });
-};
-</script>
 </head>
+
 <body>
-<div id='chartDiv'></div>
+   <!--<h1>Wire Frame 2</h1>-->
+   <section id="coin-info" class="row">
+      <div class="five columns">
+         <div id="value-box" class="row">
+            <h5 class="my-h5">$24,495.23
+               <small class="value-small">+3.5%</small>
+            </h5>
+            <span>My Total Stack Value</span>
+         </div>
+         <div class="row">Market is <b>open</b>  <small class="coin-pull-right"><i>closes in 3h 35min</i></small>
+         </div>
+         <div class="row">
+            <h6 class="coin-header">Gold <i class="fa fa-caret-right coin-pull-right"></i></h6>
+            <hr class="coin-bar" />
+            <div class="row">
+               <div class="one-third column coin-data">
+                  1206.10
+                  <br>
+                  <small>Bid</small>
+               </div>
+               <div class="one-third column coin-data">
+                  1207.10
+                  <br>
+                  <small>Ask</small>
+               </div>
+               <div class="one-third column coin-data">
+                  +23.40
+                  <br>
+                  <small>Change</small>
+               </div>
+            </div>
+
+
+            <h6 class="coin-header">Silver <i class="fa fa-caret-right coin-pull-right"></i></h6>
+            <hr class="coin-bar" />
+            <div class="row">
+               <div class="one-third column coin-data">
+                  16.10
+                  <br>
+                  <small>Bid</small>
+               </div>
+               <div class="one-third column coin-data">
+                  16.50
+                  <br>
+                  <small>Ask</small>
+               </div>
+               <div class="one-third column coin-data">
+                  -.36
+                  <br>
+                  <small>Change</small>
+               </div>
+            </div>
+
+
+            <h6 class="coin-header">Silver <i class="fa fa-caret-right coin-pull-right"></i></h6>
+            <hr class="coin-bar" />
+            <div class="row">
+               <div class="one-third column coin-data">
+                  1206.10
+                  <br>
+                  <small>Bid</small>
+               </div>
+               <div class="one-third column coin-data">
+                  1207.10
+                  <br>
+                  <small>Ask</small>
+               </div>
+               <div class="one-third column coin-data">
+                  +23.40
+                  <br>
+                  <small>Change</small>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="seven columns" style="background-color:lightgrey">
+         <div id='chartDiv'></div>
+      </div>
+   </section>
+
+
+   <!--  Table Example for the other wireframe -->
+   <section>
+      <table class="u-full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dave Gamache</td>
+      <td>26</td>
+      <td>Male</td>
+      <td>San Francisco</td>
+    </tr>
+    <tr>
+      <td>Dwayne Johnson</td>
+      <td>42</td>
+      <td>Male</td>
+      <td>Hayward</td>
+    </tr>
+  </tbody>
+</table>
+
+   </section>
+
 </body>
+
 </html>
