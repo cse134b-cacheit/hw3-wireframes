@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <script>
     $(function() {
@@ -21,285 +18,86 @@
   </script>
 </head>
   <body>
-    <div class="twelve columns">
-      <h1>Item Detail</h1>
-    </div>
-
-    <div class="one-eighth column">
+     <section id="item-detail" class="row">
+      <div class="twelve columns">
+        <h2>Add Item</h2>
+      </div>
+      <div class="one-eighth column">
       <img style="width: 100%; height: 100%;" src="../bower_components/skeleton/images/placeholder-square.jpg" alt="Item Picture">
-    </div>
-    <div class="six columns">
-      <tr>
-    <td>Metal</td>
-    <td>
-      <select style="height:30px">
-        <option value="Gold">Gold</option>
-        <option value="Platinum">Platinum</option>
-        <option value="Silver">Silver</option>
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td>Type</td>
-    <td>
-      <select style="height:30px">
-        <option value="US Eagle">US Eagle</option>
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td>Purchase Date</td>
-    <td>
-      <input type="text"  id="datepicker" size= "10" style="height:30px">
-    </td>
-  </tr>
-  <tr>
-    <td>Qty.</td>
-    <td>
-      <input type="text"  size= "10" style="height:30px" value="1">
-    </td>
-  </tr>
-  <tr>
-    <td>Premium</td>
-    <td>
-      <input type="text"  size= "10" style="height:30px"  value="47.00">
-    </td>
-  </tr>
-  <tr>
-    <td>Unit Price</td>
-    <td>
-      <input type="text"  size= "10" style="height:30px" value="1250.60">
-    </td>
-  </tr>
-  <tr>
-    <td>Gold %</td>
-    <td>0.999</td>
-  </tr>
-  <tr>
-    <td>Weight/unit (g)</td>
-    <td>1.244</td>
-  </tr>
-  <tr>
-    <td>Gold g/u</td>
-    <td>1.244</td>
-  </tr>
-  <tr>
-    <td>Gold ozt/u</td>
-    <td>0.0400</td>
-  </tr>
-  <tr>
-    <td>Total Au (ozt)</td>
-    <td>0.0400</td>
-  </tr>
-  <tr>
-    <td>Total</td>
-    <td>1199.19</td>
-  </tr>
-    <div>
-      <input type="submit" value="Save to My Stack" size= "500" >
-    </div>
-  </div>
-  
-
-
-
-
-
-
-
-
-
-
-   <!--  <div class="container">
-        <div class="one-half column">
-          <h2>Add Item</h2>
-        </div>
-    </div>
-
-    <div class="container">
+      </div>
       <div class="one-third column">
-        <img style="width: 100%; height: 100%;" src="../bower_components/skeleton/images/placeholder-square.jpg" 
-        alt="Item Picture">
-        <br>
-        <br>
+        <table class="table detail">
+          <tr>
+            <td>Metal</td>
+            <td>
+              <select style ="width:120px;">
+                <option value="Gold">Gold</option>
+                <option value="Platinum">Platinum</option>
+                <option value="Silver">Silver</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Type</td>
+            <td>
+              <select style ="width:120px;">
+                <option value="US Eagle">US Eagle</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Purchase Date</td>
+            <td>
+              <input type="text"  id="datepicker" size= "10" style="height:30px">
+            </td>
+          </tr>
+          <tr>
+            <td>Qty.</td>
+            <td>
+              <input type="text" name="quantity">
+            </td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>
+              <input type="text" name="premium">
+            </td>
+          </tr>
+          <tr>
+            <td>Unit Price</td>
+            <td>
+              <input type="text" name="unitprice">
+            </td>
+          </tr>
+          <tr>
+            <td>Gold %</td>
+            <td>0.999</td>
+          </tr>
+          <tr>
+            <td>Weight/unit (g)</td>
+            <td>1.244</td>
+          </tr>
+          <tr>
+            <td>Gold g/u</td>
+            <td>1.244</td>
+          </tr>
+          <tr>
+            <td>Gold ozt/u</td>
+            <td>0.0400</td>
+          </tr>
+          <tr>
+            <td>Total au (ozt)</td>
+            <td>0.0400</td>
+          </tr>
+          <tr>
+            <td><b>TOTAL</b></td>
+            <td>1199.19</td>
+          </tr>
+          <tr>
+            <input type="submit" value="Save to My Stack"> 
+          </tr>
+        </table>
       </div>
-      
-        <div class="col-xs-12 col-sm-8 col-md-4 col-md-offset-2">
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Metal
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <select style ="width:120px;">
-                  <option value="Gold">Gold</option>
-                  <option value="Platinum">Platinum</option>
-                  <option value="Silver">Silver</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Type
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <select style ="width:120px;">
-                  <option value="US Eagle">US Eagle</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Purchase Date
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <input type="text" size= "13" id="datepicker">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Qty
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <input type="text"  size= "13" value="1">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Premium 
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <input type="text"  size= "13" value="47.00">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Unit Price
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                <input type="text"  size= "13" value="1250.60">
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Gold %
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                0.999
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Weight/unit (g)
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                1.244
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Gold g/u
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                1.244
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Gold ozt/u
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                0.0400
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Total Au (ozt)
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                0.0400
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                Total
-              </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-6">
-              <div class="form-group">
-                1199.19
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-xs-4 col-sm-4 col-md-4">
-              <div class="form-group">
-                Cancel
-              </div>
-            </div>
-            <div class="col-xs-8 col-sm-8 col-md-8">
-              <div class="form-group">
-                <input type="submit" value="Save to My Stack" class="btn btn-info btn-block">
-              </div>
-            </div>
-          </div>
-      </div>
-    </div> -->
+    </section>
   </body>
 </html>
