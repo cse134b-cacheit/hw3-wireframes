@@ -1,0 +1,45 @@
+html, body
+{
+	height: 100%;
+	width: 100%;
+}
+
+.header
+{
+	background-color: #e0e0e0;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.container
+{
+	height: 92%;
+	width: 100%;
+}
+
+#splashbutton
+{
+	width: 100%;
+}
+
+#splashscreen
+{
+	width: 50%;
+	height: 50%;
+	margin: 10% 0 0 50px;
+}
+
+.footer
+{
+	background-color: #e0e0e0;
+	width: 100%;
+}
+
+#footer-text
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	position: relative;
+}
