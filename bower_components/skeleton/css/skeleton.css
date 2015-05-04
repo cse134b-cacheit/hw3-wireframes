@@ -428,3 +428,29 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.navbar
+{
+  background-color: #e0e0e0;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  display: inline-block;
+  line-height: 30px;
+  padding:  0 14px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #424242;
+  cursor: pointer;
+}

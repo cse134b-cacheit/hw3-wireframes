@@ -1,6 +1,10 @@
 @media (min-width: 550px) {
   .one-eighth.column              { width: 12.5%;}
   .one-fourth.column              { width: 25%;}
+
+  .navbar {
+    display: none;
+  }
 }
 
 .ul.detail {
@@ -9,6 +13,10 @@
 
 .li.detail {
   float: right;
+}
+
+#cancel {
+    padding: 30px;
 }
 
 table td {
