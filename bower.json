@@ -20,6 +20,7 @@
   ],
   "dependencies": {
     "Bootflat": "~2.0.4",
-    "skeleton": "~2.0.4"
+    "skeleton": "~2.0.4",
+    "font-awesome": "~4.3.0"
   }
 }
