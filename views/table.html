@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSE 134b HW 3</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
+</head>
+<body>
+
+	<form action="/search" method="get" class="sfm" align="right">
+    	<input type="text" name="q" value="" id="sf"/>
+		<input type="submit" value="Search" id="sb"/>
+	</form>
+	<header>
+		<p>My Stack</p>
+	</header>
+	<form>
+    	<style>
+			table, th, td {
+				border: none;
+				border-collapse: collapse;
+
+				}
+			th, td {
+				padding: 5px;
+				}
+		</style>
+		<table style="width:100%">
+			<tr>
+				<td> Image</td>
+				<td> Item</td>
+				<td> Qty.</td>
+				<td> Weight/Unit(g)</td>
+				<td> %au</td>
+				<td> Value </td>
+			</tr>
+			<tr> 
+				<td> <img src="http://upload.wikimedia.org/wikipedia/commons/6/65/Liberty_$50_Obverse.png" width="30px" 			height="30px"></td>
+				<td> US Eagle </td>
+				<td> 1 </td>
+				<td> 1.244 </td>
+				<td> .917 </td>
+				<td> 1199.10 </td>
+			</tr>
+			<tr>
+				<td> <img src="http://upload.wikimedia.org/wikipedia/commons/6/65/Liberty_$50_Obverse.png" width="30px" 			height="30px"></td>
+				<td> US Eagle </td>
+				<td> 5 </td>
+				<td> 1.244 </td>
+				<td> .917 </td>
+				<td> 5995.50 </td>
+			</tr>
+			<tr>
+				<td> <img src="http://upload.wikimedia.org/wikipedia/commons/6/65/Liberty_$50_Obverse.png" width="30px" 			height="30px"></td>
+				<td> US Eagle </td>
+				<td> 10 </td>
+				<td> 1.244 </td>
+				<td> .917 </td>
+				<td> 11990.00 </td>
+			</tr>
+		</table>
+     </form>
+</body>
+</html>
