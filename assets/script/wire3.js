@@ -8,22 +8,13 @@ var chartData = {
    },
    "series": [{
       "values": [35, 42, 67, 89, 25, 34, 67, 85],
-      "text": "Gold",
-      "background-color-1": "#FFD700",
-      "background-color-2": "#FFD700"
-
-
+      "text": "Gold"
    }, {
       "values": [54, 77, 48, 35, 40, 50, 70, 99],
-      "text": "Silver",
-      "background-color-1": "#C0C0C0",
-      "background-color-2": "#C0C0C0"
+      "text": "Silver"
    }, {
       "values": [28, 57, 43, 56, 78, 99, 67, 28],
-      "text": "Platinum",
-      "background-color-1": "#E5E4E2",
-      "background-color-2": "#E5E4E2"
-
+      "text": "Platinum"
    }],
    "legend": {},
    "scale-y": {
