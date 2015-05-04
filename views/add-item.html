@@ -8,101 +8,95 @@
   <link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
   <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
   <link rel="stylesheet" href="../bower_components/skeleton/css/item-detail.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script>
+    $(function() {
+    $( "#datepicker" ).datepicker();
+    });
+  </script>
 </head>
 
 <body>
-  <section id="item-detail" class="row">
-    <div class="twelve columns">
-      <h1>Add Item</h1>
+  <h5>Add Item</h5>
+  <section id="coin-info" class="row">
+    <div class="five columns">
+       <img style="width: 60%; height: 60%;" src="../bower_components/skeleton/images/placeholder-square.jpg" alt="Item Picture">
     </div>
 
-    <div class="one-eighth column">
-      <img style="width: 100%; height: 100%;" src="../bower_components/skeleton/images/placeholder-square.jpg" alt="Item Picture">
-    </div>
-
-    <div class="one-third column">
-      <table class="table detail">
-        <tr>
-            <td>Metal</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="Gold">Gold</option>
-                <option value="Platinum">Platinum</option>
-                <option value="Silver">Silver</option>
-              </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="US Eagle">US Eagle</option>
-              </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Purchase Date</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="US Eagle">US Eagle</option>
-              </select>
-            </td>            
-        </tr>
-        <tr>
-            <td>Qty.</td>
-            <td>
-              <input type="text" name="quantity">
-            </td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>
-              <input type="text" name="premium">
-            </td>
-        </tr>
-        <tr>
-            <td>Unit Price</td>
-            <td>
-              <input type="text" name="unitprice">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold %</td>
-            <td>
-              <input type="text" name="gold">
-            </td>
-        </tr>
-        <tr>
-            <td>Weight/unit (g)</td>
-            <td>
-              <input type="text" name="weightgold">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold g/u</td>
-            <td>
-              <input type="text" name="goldgu">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold ozt/u</td>
-            <td>
-              <input type="text" name="goldozt">
-            </td>
-        </tr>
-        <tr>
-            <td>Total au (ozt)</td>
-            <td>
-              <input type="text" name="totalau">
-            </td>
-        </tr>
-        <tr>
-            <td><b>TOTAL</b></td>
-            <td>
-              <input type="text" name="total">
-            </td>
-        </tr>
-      </table>
+    <div class="seven columns">
+      <div class="row">
+        <label class="four columns form-label">Metal</label>
+        <p class="eight columns">
+          <select style ="width:120px;">
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+            <option value="Silver">Silver</option>
+          </select>
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Type</label>
+        <p class="eight columns">
+          <select style ="width:120px;">
+            <option value="US Eagle">US Eagle</option>
+          </select>
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Purchase Date</label>
+        <p class="eight columns">
+          <input type="text"  size = "12"  id="datepicker" >
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Qty.</label>
+        <p class="eight columns">
+          <input type="text" size = "12" name="quantity" value ="1">
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Premium</label>
+        <p class="eight columns">
+          <input type="text" name="quantity"  size = "12"  value = "47.00"> 
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Unit Price</label>
+        <p class="eight columns">
+          <input type="text" name="quantity"  size = "12"  value = "1250.60">
+        </p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Gold %</label>
+        <p class="eight columns">0.999</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Weight/unit (g)</label>
+        <p class="eight columns">1.244</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Gold g/u</label>
+        <p class="eight columns">1.244</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Gold ozt/u</label>
+        <p class="eight columns">0.0400</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Total au (ozt)</label>
+        <p class="eight columns">0.0400</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">TOTAL</label>
+        <p class="eight columns">199.10</p>
+      </div>
+      <div class="row">
+        <label class="four columns form-label">Cancel</label>
+        <input type ="submit" value = "Save to My Stack">
     </div>
   </section>
+
 </body>
+</html>
