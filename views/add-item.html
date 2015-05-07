@@ -2,112 +2,153 @@
 <html lang="en">
 <head>
 
-  <meta charset="utf-8">
-  <title>Add Item</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
-  <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
-  <link rel="stylesheet" href="../bower_components/skeleton/css/item-detail.css">
+    <meta charset="utf-8">
+    <title>Add Item</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="../bower_components/skeleton/css/item-detail.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+    $(function() {
+        $( "#datepicker" ).datepicker();
+    });
+    </script>
 </head>
 
 <body>
-  <section id="item-detail" class="row">
-    <div class="twelve columns">
-      <h1>Add Item</h1>
+    <!-- navbar -->
+    <nav id="navbar">
+        <ul>
+            <li class=""><a href="#" class="fa fa-refresh navbar-padding"></a></li>
+            <li class=""><a href="index.html" >MyStackAPP</a></li>
+            <li class="pull-right"><a href="#" class="fa fa-cog navbar-padding"></a></li>
+        </ul>
+    </nav>
+    <!-- /#navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="wire3.html">
+                    <span class="fa fa-home sidebar-icon row"></span><br>
+                    <small>Home</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Au</span><br>
+                    <small>My Gold</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Ag</span><br>
+                    <small>My Silver</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Pt</span><br>
+                    <small>My Platinum</small>
+                </a>
+            </li>
+        </ul>
     </div>
+    <!-- /#sidebar -->
 
-    <div class="one-eighth column">
-      <img style="width: 100%; height: 100%;" src="../bower_components/skeleton/images/placeholder-square.jpg" alt="Item Picture">
-    </div>
+    <!-- page-content -->
+    <section id="page-content" class="container">
+        <h5 class="row">Add Item</h5>
+        <div class="row">
+            <div class="five columns">
 
-    <div class="one-third column">
-      <table class="table detail">
-        <tr>
-            <td>Metal</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="Gold">Gold</option>
-                <option value="Platinum">Platinum</option>
-                <option value="Silver">Silver</option>
-              </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Type</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="US Eagle">US Eagle</option>
-              </select>
-            </td>
-        </tr>
-        <tr>
-            <td>Purchase Date</td>
-            <td>
-              <select style ="width:120px;">
-                <option value="US Eagle">US Eagle</option>
-              </select>
-            </td>            
-        </tr>
-        <tr>
-            <td>Qty.</td>
-            <td>
-              <input type="text" name="quantity">
-            </td>
-        </tr>
-        <tr>
-            <td>Premium</td>
-            <td>
-              <input type="text" name="premium">
-            </td>
-        </tr>
-        <tr>
-            <td>Unit Price</td>
-            <td>
-              <input type="text" name="unitprice">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold %</td>
-            <td>
-              <input type="text" name="gold">
-            </td>
-        </tr>
-        <tr>
-            <td>Weight/unit (g)</td>
-            <td>
-              <input type="text" name="weightgold">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold g/u</td>
-            <td>
-              <input type="text" name="goldgu">
-            </td>
-        </tr>
-        <tr>
-            <td>Gold ozt/u</td>
-            <td>
-              <input type="text" name="goldozt">
-            </td>
-        </tr>
-        <tr>
-            <td>Total au (ozt)</td>
-            <td>
-              <input type="text" name="totalau">
-            </td>
-        </tr>
-        <tr>
-            <td><b>TOTAL</b></td>
-            <td>
-              <input type="text" name="total">
-            </td>
-        </tr>
-      </table>
+                <img style="width: 60%; height: 60%;" src="../bower_components/skeleton/images/placeholder-square.jpg" alt="Item Picture">
+            </div>
+            <div class="seven columns">
+                <div class="row">
+                    <label class="four columns form-label">Metal</label>
+                    <div class="eight columns ">
+                        <select class="coin-field">
+                            <option value="Gold">Gold</option>
+                            <option value="Platinum">Platinum</option>
+                            <option value="Silver">Silver</option>
+                        </select>
+                    </div>
+                </div>
 
-      <a id="cancel" href="item-detail.html">Cancel</a>
-      <button id="submit">Save to My Stack</button>
+                <div class="row">
+                    <label class="four columns form-label">Type</label>
+                    <div class="eight columns ">
+                        <select class="coin-field">
+                            <option value="US Eagle">US Eagle</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="row">
+                    <label class="four columns form-label">Purchase Date</label>
+                    <div class="eight columns ">
+                        <input class="coin-field" type="text"  size = "12"  id="datepicker" >
+                    </div>
+                </div>
 
-    </div>
-  </section>
+                <div class="row">
+                    <label class="four columns form-label">Qty.</label>
+                    <div class="eight columns ">
+                        <input class="coin-field" type="text" size = "12" name="quantity" value ="1">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="four columns form-label">Premium</label>
+                    <div class="eight columns ">
+                        <input class="coin-field" type="text" name="quantity"  size = "12"  value = "47.00">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label class="four columns form-label">Unit Price</label>
+                    <div class="eight columns ">
+                        <input class="coin-field" type="text" name="quantity"  size = "12"  value = "1250.60">
+                    </div>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Gold %</label>
+                    <p class="eight columns">0.999</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Weight/unit (g)</label>
+                    <p class="eight columns">1.244</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Gold g/u</label>
+                    <p class="eight columns">1.244</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Gold ozt/u</label>
+                    <p class="eight columns">0.0400</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Total au (ozt)</label>
+                    <p class="eight columns">0.0400</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">TOTAL</label>
+                    <p class="eight columns">199.10</p>
+                </div>
+                <div class="row">
+                    <label class="four columns form-label">Cancel</label>
+                    <input type ="submit" value = "Save to My Stack">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /#page-content -->
 </body>
+</html>

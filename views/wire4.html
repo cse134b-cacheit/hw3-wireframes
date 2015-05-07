@@ -3,126 +3,166 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+    <title>Wireframe4</title>
     <link rel="stylesheet" href="../bower_components/skeleton/css/normalize.css">
     <link rel="stylesheet" href="../bower_components/skeleton/css/skeleton.css">
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="../assets/style/wire3.css">
+    <link rel="stylesheet" href="../assets/style/main.css">
     <script src="../assets/script/wire4.js"></script>
     <script src="http://cdn.zingchart.com/zingchart.min.js"></script>
 
 </head>
 
 <body>
-    <!--<h1>Wire Frame 2</h1>-->
-    <nav class="row my-navbar">
-       <ul>
-          <li class="navbar-padding"><a href="#" class="fa fa-refresh  "></a></li>
-          <li class="navbar-padding"><a href="#" >MyStackAPP</a></li>
-          <li class="pull-right navbar-padding"><a href="#" class="fa fa-cog"></a></li>
-       </ul>
+    <!-- navbar -->
+    <nav id="navbar">
+        <ul>
+            <li class=""><a href="#" class="fa fa-refresh navbar-padding"></a></li>
+            <li class=""><a href="index.html" >MyStackAPP</a></li>
+            <li class="pull-right"><a href="#" class="fa fa-cog navbar-padding"></a></li>
+        </ul>
     </nav>
-    <section class="row coin-section">
-        <div class="five columns">
-            <div id="box-info" class="row">
-                <div class="eight columns">
-                    <h5 class="no-btm-margin row">$18,234.10</h5>
-                    <span class="row">My Gold Value</span>
-                </div>
-                <div class="four columns">
-                    <span class="row box-percent">Daily +3.5%</span>
-                    <span class="row box-percent">Overall +1.2%</span>
-                </div>
-            </div>
+    <!-- /#navbar -->
 
+    <!-- sidebar -->
+    <div id="sidebar">
+        <ul>
+            <li>
+                <a href="wire3.html">
+                    <span class="fa fa-home sidebar-icon row"></span><br>
+                    <small>Home</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Au</span><br>
+                    <small>My Gold</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Ag</span><br>
+                    <small>My Silver</small>
+                </a>
+            </li>
+            <li>
+                <a href="wire4.html">
+                    <span class="sidebar-icon">Pt</span><br>
+                    <small>My Platinum</small>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar -->
 
-            <div class="row" id="coin-spot">
-                <h6 class="coin-header coin-spot">Current Spot</h6>
-                <hr class="coin-bar" />
-                <div class="row">
-                    <div class="one-third column coin-data">
-                        1206.10
-                        <br>
-                        <small>Bid</small>
-                    </div>
-                    <div class="one-third column coin-data">
-                        1207.10
-                        <br>
-                        <small>Ask</small>
-                    </div>
-                    <div class="one-third column coin-data">
-                        +23.40
-                        <br>
-                        <small>Change</small>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="seven columns" style="background-color:lightgrey">
-            <div id='chartDiv'></div>
-        </div>
-    </section>
-
-
-    <!--  Table Example for the other wireframe -->
-    <section class="row coin-section">
+    <!-- page-content -->
+    <section id="page-content" class="container">
         <div class=row>
-            <h5 class="six columns">
-                My Stack
-            </h5
-
-            <form class="five columns" action="/search" method="get" class="sfm">
-                <div class="u-pull-right">
-                    <input type="text" name="q" value="" id="sf"/>
-                    <input type="submit" value="Search" id="sb"/>
-                    <i class="fa fa-plus"></i>
+            <div class="five columns">
+                <div id="box-info" class="row">
+                    <div class="eight columns">
+                        <h5 class="no-btm-margin row">$18,234.10</h5>
+                        <span class="row">My Gold Value</span>
+                    </div>
+                    <div class="four columns">
+                        <span class="row box-percent">Daily +3.5%</span>
+                        <span class="row box-percent">Overall +1.2%</span>
+                    </div>
                 </div>
-            </form>
+
+
+                <div class="row" id="coin-spot">
+                    <h6 class="coin-header coin-spot">Current Spot</h6>
+                    <hr class="coin-bar" />
+                    <div class="row">
+                        <div class="one-third column coin-data">
+                            1206.10
+                            <br>
+                            <small>Bid</small>
+                        </div>
+                        <div class="one-third column coin-data">
+                            1207.10
+                            <br>
+                            <small>Ask</small>
+                        </div>
+                        <div class="one-third column coin-data">
+                            +23.40
+                            <br>
+                            <small>Change</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="seven columns">
+                <div id='chartDiv'></div>
+            </div>
         </div>
+        <br>
+        <div class=row>
+            <h5 class="six columns no-btm-margin">
+                My Stack
+            </h5>
 
-        <table class="u-full-width">
-            <thead>
-                <tr>
-                    <th class="img-col"> Image</th>
-                    <th> Item</th>
-                    <th> Qty.</th>
-                    <th> Weight/Unit(g)</th>
-                    <th> %au</th>
-                    <th> Value </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td> <img src="../assets/image/Liberty_50_Obverse.png" width="30px" 			height="30px"></td>
-                    <td> US Eagle </td>
-                    <td> 1 </td>
-                    <td> 1.244 </td>
-                    <td> .917 </td>
-                    <td> 1199.10 </td>
-                </tr>
-                <tr>
-                    <td> <img src="../assets/image/Liberty_50_Obverse.png" width="30px" 			height="30px"></td>
-                    <td> US Eagle </td>
-                    <td> 5 </td>
-                    <td> 1.244 </td>
-                    <td> .917 </td>
-                    <td> 5995.50 </td>
-                </tr>
-                <tr>
-                    <td> <img src="../assets/image/Liberty_50_Obverse.png" width="30px" 			height="30px"></td>
-                    <td> US Eagle </td>
-                    <td> 10 </td>
-                    <td> 1.244 </td>
-                    <td> .917 </td>
-                    <td> 11990.00 </td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+                <form class="six columns no-btm-margin" action="#" method="get">
+                    <div class="u-pull-right">
+                        <input class="no-btm-margin" type="text" name="q" value="" id="sf"/>
+                        <input class="no-btm-margin" type="submit" value="Search" id="sb"/>
+                        <a href="add-item.html"><i class="fa fa-plus add-button"></i></a>
+                    </div>
+                </form>
+            </div>
 
-</body>
-
-</html>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th class="img-col"> Image</th>
+                        <th> Item</th>
+                        <th> Qty.</th>
+                        <th> Weight/Unit(g)</th>
+                        <th> %au</th>
+                        <th> Value </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="img-col">
+                            <a href="item-detail.html">
+                                <img src="../assets/image/Liberty_50_Obverse.png" alt="coin" width="30" height="30">
+                            </a>
+                        </td>
+                        <td> US Eagle </td>
+                        <td> 1 </td>
+                        <td> 1.244 </td>
+                        <td> .917 </td>
+                        <td> 1199.10 </td>
+                    </tr>
+                    <tr>
+                        <td class="img-col">
+                            <a href="item-detail.html">
+                                <img src="../assets/image/Liberty_50_Obverse.png" alt="coin" width="30" height="30">
+                            </a>
+                        </td>
+                        <td> US Eagle </td>
+                        <td> 5 </td>
+                        <td> 1.244 </td>
+                        <td> .917 </td>
+                        <td> 5995.50 </td>
+                    </tr>
+                    <tr>
+                        <td class="img-col">
+                            <a href="item-detail.html">
+                                <img src="../assets/image/Liberty_50_Obverse.png" alt="coin" width="30" height="30">
+                            </a>
+                        </td>
+                        <td> US Eagle </td>
+                        <td> 10 </td>
+                        <td> 1.244 </td>
+                        <td> .917 </td>
+                        <td> 11990.00 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+    </html>

@@ -1,0 +1,163 @@
+#box-info {
+    margin-bottom: 16px;
+    padding: 16px 16px 16px 16px;
+}
+.bg {
+    background: #E5E5E5;
+}
+#box-info .box-percent{
+    font: bold;
+    color: grey;
+}
+
+#metal-total {
+    margin-bottom: 16px;
+    padding: 16px 16px 16px 16px;
+}
+.value-small {
+    font-size: 70%;
+    font: bold;
+    color: grey;
+}
+
+.coin-section {
+    margin: 16px 16px 16px 16px;
+}
+
+.coin-pull-right {
+    padding-top: 4px;
+    float: right;
+}
+.coin-bar {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.coin-header {
+    margin-bottom: 0;
+}
+.coin-data {
+    text-align: center;
+    margin-left: 0;
+}
+
+#coin-spot {
+    border: thin solid lightgrey;
+    border-radius: 8px;
+    padding: 16px 16px 16px 16px;
+    margin-bottom: 16px;
+}
+
+.no-btm-margin {
+    margin-bottom: 0;
+}
+
+
+
+#navbar {
+    background: #E5E5E5;
+    height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 50px;
+}
+
+/*Sidebar*/
+#sidebar {
+    position:absolute;
+    left:0; top:50px; bottom: 0;
+    width: 80px;
+}
+#sidebar ul {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#sidebar a {
+    text-decoration:none;
+    color:black;
+}
+.sidebar-icon {
+    font-size: 2.5em;
+
+}
+
+#page-content {
+    position: absolute;
+    left:80px; top:60px; right:0; bottom:0;
+}
+#page-content span {
+    margin-bottom: 25px;
+}
+#navbar a {
+    color:black;
+}
+
+#navbar a:hover {
+  font-weight: bold;
+}
+
+
+.navbar-padding {
+    padding-top: 8px;
+    padding-bottom: 7px;
+}
+
+.coin-field {
+    width: 150px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 550px) {
+    #coin-info {
+        margin: 0 0;
+    }
+
+
+    .img-col {
+        display: none;
+    }
+
+    .coin-field {
+        width: inherit;
+    }
+
+    #sidebar {
+        visibility: hidden;
+    }
+
+    #page-content {
+        position: absolute;
+        left:0px; top:60px; right:0; bottom:0;
+    }
+}
+
+#footer-text {
+    margin-bottom: 0px;
+}
+
+footer {
+	background:#E5E5E5;
+	width:100%;
+    bottom:0;
+    height:50px;
+	position:absolute;
+	/*
+
+
+	left:0;
+    */
+
+}
+
+.add-button {
+    padding-right: 0px;
+    margin-left: 20px;
+    margin-right: 10px;
+    border-left-width: 5px;
+}
+
+#splash-content {
+    margin-top: 30px;
+}
